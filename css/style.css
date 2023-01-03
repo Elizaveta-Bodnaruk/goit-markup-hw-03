@@ -3,6 +3,7 @@
 
  /* Logo */
 
+
 :root {
     --brand-color: #2E2F42;
     --color1:#4D5AE5;
@@ -13,8 +14,30 @@
     --color6: #E7E9FC;
 }
 
+/* Додаткові параметри скидання стилів */
+
+h1,h2,h3,h4,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    background-color: var(--color4);
+}
+
 .contacts-logo {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -26,7 +49,7 @@
 }
  
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -43,7 +66,7 @@
 }
 
 body {
-font-family: Roboto, sans-serif;
+font-family: "Roboto", sans-serif;
 color: var(--brand-color);
 }
 
@@ -96,7 +119,7 @@ color: var(--brand-color);
 }
 
 .main-pointer {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -132,7 +155,7 @@ color: var(--brand-color);
 }
 
 .hero-logo {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 56px;
@@ -240,7 +263,7 @@ color: var(--brand-color);
 
 
 .pointer { 
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
@@ -252,6 +275,7 @@ color: var(--brand-color);
     border: 1px solid var(--color6);
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: var(--color3);
 }
 
 .pointer:hover {
