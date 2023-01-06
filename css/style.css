@@ -1,8 +1,4 @@
  
- /* Index.html file */
-
- /* Logo */
-
 
 :root {
     --brand-color: #2E2F42;
@@ -14,7 +10,7 @@
     --color6: #E7E9FC;
 }
 
-/* Додаткові параметри скидання стилів */
+/* ============= Додаткові параметри скидання стилів ============= */
 
 h1,h2,h3,h4,p {
     margin-top: 0;
@@ -40,6 +36,40 @@ body {
     background-color: var(--color4);
 }
 
+
+/* Створений загальний контейнер */
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============= Позіціонування контенту index.html============= */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.secondary-link {
+    display: flex;
+    align-items: center;
+}
+
 .contacts-logo {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -52,6 +82,21 @@ body {
     text-transform: uppercase;
 }
  
+.logo-two {
+    margin-right: 77px;
+}
+
+.link .item:not(:last-child) {
+    margin-right: 40px;
+}
+ 
+.secondary-link .item + .item {
+margin-left: 40px;
+}
+
+
+/* ============= Позіціонування контенту index.html =============*/
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -75,11 +120,12 @@ color: var(--brand-color);
 }
 
 
-/* Main navigation */
+/* ============= Main navigation ============= */
 
 .link {
+    text-decoration: none;
+
     background-color: var(--color4);
-    text-decoration:none;
 }
 
 
@@ -101,7 +147,10 @@ color: var(--brand-color);
     background-color: var(--color4);
 }
     
-/* Hover and focus */
+/* ============= Main navigation ============= */
+
+
+/* ============= Hover and focus ============= */
 
 .contacts {
     color: var(--brand-color);
@@ -122,21 +171,50 @@ color: var(--brand-color);
     color: var(--color1);
 }
 
+.contacts-inform {
+    color: var(--brand-color);
+}
+
+.contacts-inform:hover {
+    color: var(--color1);
+}
+
+.contacts-inform:focus {
+    color:var(--color1)
+}
+
+.contacts-inform-tel {
+    margin-right: 40px;
+
+    color: var(--brand-color);
+}
+
+.contacts-inform-tel:hover {
+    color: var(--color1);
+}
+
+.contacts-inform-tel:focus {
+    color: var(--color1);
+}
+
+/* ============= Hover and focus ============= */
+
+
 .main-pointer {
+    align-items: center;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.1;
-
     letter-spacing: 0.04em;
-    color: var(--color4);
-    align-items: center;
-    padding: 16px 32px;
 
+    color: var(--color4);
     background-color: var(--color1);
-    border: none;
-    border-radius: 4px;
  }
 
 .main-pointer:hover {
@@ -159,19 +237,20 @@ color: var(--brand-color);
 }
 
 .hero-logo {
+    text-align: center;
+
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 56px;
     line-height: 1;
-    text-align: center;
     letter-spacing: 0.02em;
 
     color: var(--color4);
 }
 
 
-/* Feauters section */
+/* ============= Feauters section ============= */
 
 .text h3 { 
     font-weight: 700;
@@ -191,17 +270,20 @@ color: var(--brand-color);
 }
 
 .text h2 {
+    text-align: center;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-
-    text-align: center;
     letter-spacing: 0.02em;
 
     color: var(--brand-color);
 }
 
-/* Page footer */
+/* ============= Feauters section ============= */
+
+
+/* ============= Page footer ============= */
 
 .secondary-text {
     background-color: var(--color3);
@@ -211,15 +293,16 @@ color: var(--brand-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     background-color: var(--color4);
 }
 
 .secondary-text h2 {
+    text-align: center;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-
-    text-align: center;
     letter-spacing: 0.02em;
 
     color: var(--brand-color);
@@ -260,25 +343,27 @@ color: var(--brand-color);
     color: var(--color3);
  }
 
-/* Portfolio.html */
+/* ============= Page footer ============= */
 
 
-/* Main navigation */
+
+/* ============= PORTFOLIO.HTML  Main navigation ============= */
 
 
 .pointer { 
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
-    padding: 8px 16px;
-
+    
     color: var(--color1);
     border: 1px solid var(--color6);
-    border-radius: 4px;
-    box-sizing: border-box;
     background-color: var(--color3);
 }
 
