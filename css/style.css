@@ -94,6 +94,46 @@ body {
 margin-left: 40px;
 }
 
+.text-title .title {
+    margin-bottom: 8px;
+
+    width: 264px;
+}
+
+.text-title .title-p {
+    margin-bottom: 120px;
+}
+
+ .no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.text-title {
+    display: flex;
+    align-items: center;
+}
+
+.title-list:not(:last-child) {
+    margin-right: 24px;
+}
+
+.text {
+    margin-bottom: 120px;
+}
+
+.text-img .list-img {
+    margin-top: 72px;
+    margin-bottom: 120px;
+
+    display: flex;
+    align-items: center; 
+}
+
+.text-img .list-img-li:not(:last-child) {
+margin-right: 24px;
+}
+
 
 /* ============= Позіціонування контенту index.html =============*/
 
@@ -197,6 +237,7 @@ color: var(--brand-color);
     color: var(--color1);
 }
 
+
 /* ============= Hover and focus ============= */
 
 
@@ -204,6 +245,7 @@ color: var(--brand-color);
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    text-align: center;
     padding: 16px 32px;
     gap: 10px;
     border: none;
@@ -232,13 +274,8 @@ color: var(--brand-color);
  
 
 .hero {
-    position: absolute;
-    text-align: center;
-
-    width: 1440px;
-    height: 603px;
-    left: 0px;
-    top: 72px;
+    margin-top: 0px;
+    margin-bottom: 120px;
 
     background-color: var(--brand-color);
 }
@@ -249,6 +286,7 @@ color: var(--brand-color);
 
 .hero-logo {
     text-align: center;
+    margin-bottom: 48px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -280,7 +318,7 @@ color: var(--brand-color);
     color: var(--color2);
 }
 
-.text h2 {
+.text-img h2 {
     text-align: center;
 
     font-weight: 700;
