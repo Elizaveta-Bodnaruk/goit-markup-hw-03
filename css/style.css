@@ -8,6 +8,8 @@
     --color4:#FFFFFF;
     --color5: #404BBF;
     --color6: #E7E9FC;
+    --flex-element-gap:10px;
+    --flex-shadow:0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* ============= Додаткові параметри скидання стилів ============= */
@@ -38,12 +40,17 @@ body {
 
 
 /* Створений загальний контейнер */
+
 .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.section {
+    padding-right: 156px;
+    padding-left: 156px;
+}
 
 /* ============= Позіціонування контенту index.html============= */
 
@@ -54,6 +61,8 @@ body {
 
     padding-top: 24px;
     padding-bottom: 24px;
+
+    border-bottom: 0.5px solid var(--color3);
 }
 
 .header-nav {
@@ -136,6 +145,7 @@ margin-left: 40px;
 }
 
 .secondary-text-title {
+    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -210,6 +220,8 @@ margin-left: 40px;
 }
 
 .menu-button {
+    margin-top: 72px;
+
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -226,6 +238,14 @@ margin-right: 24px;
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: calc( -1 + var(--flex-element-gap));    
+    margin-left: calc(-1 + var(--flex-element-gap));   
+}
+
+.flex-container > .flex-element {
+   margin-left: var(--flex-element-gap);   
+   margin-top: var(--flex-element-gap);   
 }
 
 .flex-element:not(:nth-child(3n)) {
@@ -237,18 +257,27 @@ margin-right: 24px;
 }
 
 .flex-img {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+
+    display: block;
+    max-width: 100%;
 }
 
 .flex-h3 {
-    padding-bottom: 8px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .flex-p {
+    margin-bottom: 32px;
+}
+
+.flex-content {
     padding-bottom: 32px;
     padding-left: 16px;
+
+    border: 0.5px solid var(--color3);
 }
+
 
 /* Test-container img */
 
